@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Profile </title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>PROFILE</h1>
+		<h2>This is my profile</h2>
+		<a href="https://www.google.com"><img src="profile.png" width="15%" height="18%"></a>
+
+		<table align="center" id="id3">
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>LASTNAME</th>
+				<th>AGE</th>
+			</tr>
+			<tr>
+				<td>5935512021</td>
+				<td>Niran</td>
+				<td>Sasooloh</td>
+				<td>20</td>
+			</tr>
+		</table>
+		<center>
+			<div class="bullet" style="list-style-type:square;">
+			<li id="Tli">Tell Number</li>
+			<li id="Eli">E-mail</li>
+			<li id="Ali">Address</li>
+		</div>
+		</center>
+		<button onclick="alert('Hello welcome to profile of Niran');"> Click </button>
+		<p>WED BY NIRAN 5935512021</p>
+	</div>
+<body>
+<script>
+   jQuery("#Tli").click( function () {
+       jQuery("#Tli").text("0807053688");
+   });
+   jQuery("#Eli").click( function () {
+       jQuery("#Eli").text("Niran@gmail.com");
+   });
+   jQuery("#Ali").click( function () {
+       jQuery("#Ali").text("PSU phuket");
+   });
+
+   $("#id3").click( function () {
+       $(this).text("Plesse reload the page");
+   });
+   $("#id3").click(function() {
+       $(this).fadeOut(3000);
+       $(this).fadeIn(3000);
+   });
+</script>
+
+
+</body>
+</html>
